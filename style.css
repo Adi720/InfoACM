@@ -1,0 +1,157 @@
+html {
+    background-color: black
+}
+
+
+/* Heading */
+#head {
+    padding: 12px;   
+    justify-content: center;
+    text-align: center;
+    max-width: 540px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 10px;
+}
+  
+/* Navbar Section  */
+.navbar {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+
+}
+
+.navbar li a {
+    padding: 3px 3px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navbar li a:hover {
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.search {
+    float: right;
+    color: whitesmoke;
+    padding: 12px 75px;
+}
+
+.navbar input {
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 128px;
+}
+
+/* Short Info Text */
+
+.short-info{
+
+    font-family: sans-serif;
+    font-weight: bold;
+    border: 1px solid #a2a9b1;
+    border-spacing: 3px;
+    background-color: white;
+    color: black;
+    margin: 50px;
+    padding: 5px;
+    float: right;
+    font-size: 88%;
+    line-height:1.5rem;
+}    
+
+/* ACM LOGO */
+img{
+    display: flex;
+    height: 400px;
+    width: 400px;   
+    margin: auto;
+    
+}
+
+
+/* CARDS FOR INFO */
+.container {
+    margin: 30px;
+    position: relative;
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+
+    grid-template-rows: auto;
+    grid-gap: 0 40px;
+}
+
+
+.container .box{
+    position: relative;
+    height: 400px;
+    background: #060c21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.content{
+    position: relative;
+    padding: 20px;
+    transform: translateY(40px);
+
+}
+
+.box .content h3{
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+.box .content p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+}
+
+.box .content a{
+    position: relative;
+    margin: 20px 0 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    display: inline-block;
+    color: white;
+    transition: 0.5s;
+    transform: translateY(-40px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.box:hover .content a{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.box .content a:hover{
+    color: #000;
+    background: white;
+}
+
+
+
